@@ -1,4 +1,4 @@
-package com.qb.sga_jee;
+package mx.com.gm.sga;
 
 /**
  * Hello world!

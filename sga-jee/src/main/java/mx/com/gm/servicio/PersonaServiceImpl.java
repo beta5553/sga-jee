@@ -1,9 +1,10 @@
-package com.qb.sga_jee.servicio;
+package mx.com.gm.servicio;
 
 import java.util.ArrayList;
 import java.util.List;
 import javax.ejb.Stateless;
-import com.qb.sga_jee.domain.Persona;
+
+import mx.com.gm.domain.Persona;
 
 @Stateless
 public class PersonaServiceImpl implements PersonaServiceRemote {

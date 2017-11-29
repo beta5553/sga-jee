@@ -1,4 +1,4 @@
-package com.qb.sga_jee.domain;
+package mx.com.gm.domain;
 
 import java.io.Serializable;
 

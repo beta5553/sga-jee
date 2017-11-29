@@ -1,4 +1,4 @@
-package com.qb.sga_jee.domain.cliente;
+package mx.com.gm.cliente;
 
 import java.util.List;
 
@@ -6,8 +6,8 @@ import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
 
-import com.qb.sga_jee.domain.Persona;
-import com.qb.sga_jee.servicio.PersonaServiceRemote;
+import mx.com.gm.domain.Persona;
+import mx.com.gm.servicio.PersonaServiceRemote;
 
 public class ClientePersonaService {
 	
@@ -15,8 +15,9 @@ public class ClientePersonaService {
 		
 		try {
 			Context jndi = new InitialContext();
-			PersonaServiceRemote personaService = (PersonaServiceRemote)
-					jndi.lookup("java:global/sga-jee/PersonaServiceImpl!com.qb.sga_jee.servicio.PersonaServiceRemote");
+			PersonaServiceRemote personaService = (PersonaServiceRemote) jndi.lookup("java:global/sga-jee/PersonaServiceImpl!mx.com.gm.sga.servicio.PersonaServiceRemote");
+			
+			//PersonaServiceRemote personaService = (PersonaServiceRemote) jndi.lookup("");
 			
 			List<Persona> personas = personaService.listarPersonas();
 			
